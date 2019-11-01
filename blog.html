@@ -649,7 +649,7 @@
                 <a href="/" title="{Title}">
                     <span class="img"></span>
                 </a>
-                <img src = "https://static.btgpactual.com/static/img/logo.png" width="225" height="80"
+                <img src = "https://static.btgpactual.com/static/img/logo.png" width="200" height="85"
                 <a href="/" title="{Title}">
                     <h1>Pro - 3</h1>
 			    </a>
@@ -672,30 +672,37 @@
             <img src="https://www.atf.gov/n/n/sites/default/files/media/2018/02/image_of_technology_wavegraph-673266772.jpg" width="950"
             height="190">
 
-        Postagens - 
-            <!-- Photo -->   
-            Dia da última postagem
-                <div id="date">
-                    <a href="{Permalink}">
-                        {block:Date}{DayOfMonth} {Month} {Year}{/block:Date}
-                    </a>
-                    {block:IfEnableCommentCount}
-        				{block:IfDisqusShortname}
-						<a href="{Permalink}#disqus_thread">0 Comments</a>
-						{/block:IfDisqusShortname}
-					{/block:IfEnableCommentCount}
+        Postagens
+            <!-- Photo --> 
+            <p>
+                    Dia da última postagem - <script> document.write(new Date().toLocaleDateString()); </script>
+            </p>
+            
+               <div id="date">
+                    <legend>Crie seu post aqui:</legend>
+                    <p></p>
+						
+					
                 </div>
                 <div id="post">
-                    {LinkOpenTag}
-                        <img src="{PhotoURL-HighRes}" />
-                    {LinkCloseTag}
-                    {block:Caption}
-                        <div class="text">{Caption}</div>
-                    {/block:Caption}
+                    <textarea style ="margin: 0px; height: 190px; width: 873px;" id="myText" ></textarea>>
+                                       
+                    </textarea>
+                    
+                    <button onclick="myFunction()">Postar!</button>
+
+                    <p id="demo"></p>
+                    
+                    <script>
+                    function myFunction() {
+                      var x = document.getElementById("myText").value;
+                      document.getElementById("demo").innerHTML = x;
+                    }
+                    </script>
+                    
+                    
                 </div>    
-            {/block:Photo}
-            <!-- Photoset -->
-            {block:Photoset}
+           
                 <div id="date">
                     <a href="{Permalink}">
                         {block:Date}{DayOfMonth} {Month} {Year}{/block:Date}
