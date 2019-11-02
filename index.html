@@ -1,8 +1,34 @@
 <html>
     <head>
         <title>Blog - Pro3</title>
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <script src="blog.js"></script>
     </head>
     <body>
-        <p>Blog</p>
+        <header class="header">
+            <img src="logo.png" class="logo">
+            <nav class="menu">
+                <ul class="links">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/meu-perfil">MEU PERFIL</a></li>
+                    <li><a href="/https://powerbi.microsoft.com/pt-br/landing/signin/">POWER BI</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="post-container">
+                <textarea id="post-content" placeholder="Crie sua postagem" class="post-content"></textarea>
+                <button id="post-button" class="post-button"></button>
+            </section>
+
+            <article id="post-list" class="post-list">
+                <section id="base-post" class="post hide">
+                    <span class="author"></span>
+                    <time class="posted-at"></time>
+                    <p class="content"></p>
+                </section>
+            </article>
+        </main>
     </body>
 </html>
