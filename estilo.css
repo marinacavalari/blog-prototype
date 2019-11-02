@@ -129,7 +129,6 @@
 
 .main .post-list {
     width: 60%;
-    height: 50%;
     margin: 2em auto;
     display: flex;
     flex-direction: column;

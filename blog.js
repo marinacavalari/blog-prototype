@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     var button = document.getElementById('post-button');
     var postList = document.getElementById('post-list');
+    var postContent = document.getElementById('post-content');
+
     var author = 'Anon';
 
-    button.addEventListener('click', function(event) {
+    var addPost = function() {
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
@@ -25,6 +27,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
         postList.appendChild(newPost);
 
         postContent.value = '';
-    })
+    }
+
+    postContent.addEventListener('keypress', function(event) {
+
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            
+            addPost();
+        }
+    });
+
+    button.addEventListener('click', addPost);
     
 });
