@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src:
+        url('fonts/museo-sans-300-webfont.eot');
+    src:
+        url('fonts/museo-sans-300-webfont-iefix.eot')
+        format('embedded-opentype'),
+        url('fonts/museo-sans-300-webfont.woff2')
+        format('woff2'),
+        url('fonts/museo-sans-300-webfont.woff')
+        format('woff'),
+        url('fonts/museo-sans-300-webfont.ttf')
+        format('truetype'),
+        url('fonts/museo-sans-300-webfont.svg')
+        format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src:
+        url('fonts/museo-sans-500-webfont.eot');
+    src:
+        url('fonts/museo-sans-500-webfont-iefix.eot')
+        format('embedded-opentype'),
+        url('fonts/museo-sans-500-webfont.woff2')
+        format('woff2'),
+        url('fonts/museo-sans-500-webfont.woff')
+        format('woff'),
+        url('fonts/museo-sans-500-webfont.ttf')
+        format('truetype'),
+        url('fonts/museo-sans-500-webfont.svg')
+        format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hide {
+    display: none !important;
+}
+
+.header {
+    position: fixed;
+    background-color: #53b3ff;
+    width: calc(20% - 0.4em);
+    height: 100%;
+    font-family: "Museo Sans";
+}
+
+.header .logo {
+    display: block;
+    margin: 2em auto;
+    width: 80%;
+}
+
+.header .menu {
+    width: 100%;
+}
+
+.header .menu .links {
+    width: 100%;
+    text-align: center;
+}
+
+.header .menu .links li {
+    border-right: 0.4em solid #53b3ff;
+    display: flex;
+}
+
+.header .menu .links li:hover {
+    border-right: 0.4em solid #f3f3f3;
+}
+
+.header .menu .links li a {
+    flex: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.main {
+    left: 20%;
+    position: fixed;
+    background-color: #f3f3f3;
+    width: 80%;
+    height: 100%;
+}
+
+.main .post-container {
+    width: 60%;
+    height: 20%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+}
+
+.main .post-container .post-content {
+    height: 5em;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    line-height: 5em;
+    font-size: 1.4em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.main .post-container .post-button {
+    border: none;
+    background: #53b3ff url('white-check.svg') no-repeat center;
+    background-size: 50%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.main .post-container .post-button:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.main .post-list {
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .post-list .post {
+    position: relative;
+    display: block;
+    background-color: #D6E9F8;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin: 1em 0;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main .post-list .post:nth-child(odd) {
+    background-color: white;
+}
+
+.main .post-list .post .author {
+    position: absolute;
+}
+
+.main .post-list .post .posted-at {
+    position: absolute;
+    font-size: 0.8em;
+    right: 1em;
+}
+
+.main .post-list .post .content{
+    margin-top: 2em;
+    padding: 1em;
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
