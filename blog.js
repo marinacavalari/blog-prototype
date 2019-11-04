@@ -23,6 +23,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         newPost.getElementsByClassName('author')[0].innerHTML = author;
         newPost.getElementsByClassName('posted-at')[0].innerHTML = time;
         newPost.getElementsByClassName('content')[0].innerHTML = content;
+        newPost.getElementsByClassName('like')[0].addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if (this.classList.contains('pressed')) {
+                this.classList.remove('pressed');
+            } else {
+                this.classList.add('pressed');
+            }
+
+        })
 
         postList.appendChild(newPost);
 
