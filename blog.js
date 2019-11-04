@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var postList = document.getElementById('post-list');
     var postContent = document.getElementById('post-content');
 
-    var author = 'Anon';
+    var author = 'Rafael Resende';
 
     var addPost = function() {
         var today = new Date();
@@ -33,7 +33,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
 
         })
+        newPost.getElementsByClassName('dislike')[0].addEventListener('click', function(event) {
+            event.preventDefault();
 
+            if (this.classList.contains('pressed')) {
+                this.classList.remove('pressed');
+            } else {
+                this.classList.add('pressed');
+            }
+
+        })
+        
         postList.appendChild(newPost);
 
         postContent.value = '';

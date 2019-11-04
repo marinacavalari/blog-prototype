@@ -102,16 +102,16 @@
 
 .header .user .name {
     display: inline-block;
-    margin-left: 1em;
+    margin-left: 0.5em;
     color: white;
     font-size: 1.2em;
 }
 .main {
     left: 20%;
-    position: fixed;
+    position: absolute;
     background-color: #f3f3f3;
     width: 80%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .main .post-container {
@@ -179,6 +179,22 @@
     height: 2.4em;
     border-radius: 50%;
     position: absolute;
+    right: 5em;
+    bottom: -1em;
+    outline: none;
+    transition: opacity 200ms;
+}
+
+.main .post-list .post .dislike {
+    border: 1px solid #f3f3f3;
+    background: white url('dislike-not-pressed.png') no-repeat center;
+    opacity: 0.4;
+    background-size: 50%;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    position: absolute;
     right: 2em;
     bottom: -1em;
     outline: none;
@@ -191,11 +207,22 @@
     opacity: 1;
 }
 
+
 .main .post-list .post .like:hover {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
     opacity: 1;
 }
+.main .post-list .post .dislike.pressed {
+    background: #397eff url('dislike-pressed.png') no-repeat center;
+    background-size: 50%;
+    opacity: 1;
+}
 
+
+.main .post-list .post .dislike:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
 .main .post-list .post:nth-child(odd) {
     background-color: white;
 }
