@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Blog - Pro3</title>
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <script src="blog.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img src="logo.png" class="logo">
+            <nav class="menu">
+                <ul class="links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="meu-perfil.html">MEU PERFIL</a></li>
+                    <li><a href="https://teams.microsoft.com/l/team/19%3aa82acdfeb490479ca09f93c3f0c4222d%40thread.skype/conversations?groupId=1b77d74b-b01e-4388-8f75-ab2ae93bbeb1&tenantId=16e7cf3f-6af4-4e76-941e-aecafb9704e9" target="_blank">GRUPOS</a></li>
+                    <li><a href="https://app.powerbi.com/groups/me/reports/8e65f49d-e712-408c-8cef-599ed3d0bd20/ReportSection5fc9e1b9befc072a0241?ctid=16e7cf3f-6af4-4e76-941e-aecafb9704e9 " target="_blank">POWER BI</a></li>
+                </ul>
+            </nav>
+
+            <a href="meu-perfil.html">
+                <figure class="user">
+                    <img src="profile.png" class="image">
+                    <figcaption class="name">Energia</figcaption>
+                </figure>
+            </a>
+        </header>
+        <main class="main">
+            <p class = "barra"><textarea id="busca" placeholder="busca..." class="busca-content"></textarea></p>    
+                <header class = "areas">
+                        <a class = "finance" href="finance.html">Finance</a>
+                        <a class = "ops" href="ops.html">Operations</a>
+                        <a class = "front" href="front.html">Front Office</a>   
+                </header>  
+            <section class="post-container">
+                <textarea id="post-content" placeholder="Crie sua postagem" class="post-content"></textarea>
+                <button id="post-button" class="post-button"></button>
+            </section>
+                  
+            <article id="post-list" class="post-list">
+                <section id="base-post" class="post hide">
+                    <span class="author"></span>
+                    <time class="posted-at"></time>
+                    <p class="content"></p>
+                    <button class="like"></button>
+                    <button class="dislike"></button>
+               
+                </section>
+            </article>
+            <article id="post-fake" class="fake">
+                <span class="author">Energia</span>
+                <time class="posted-at">17:29 05/11/2019</time>
+                <p class="content">marina</p>
+                <button class="like"></button>
+                <button class="dislike"></button>
+
+            </article>
+        </main>
+    </body>
+</html>

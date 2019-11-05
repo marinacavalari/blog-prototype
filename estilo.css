@@ -112,8 +112,136 @@
     background-color: #f3f3f3;
     width: 80%;
     min-height: 100%;
+    font-family: "Museo Sans"
 }
 
+.main .mapa-front {
+    position: absolute;
+    background-color: #dce6f7;
+    width: 50%;
+    min-height: 50%;
+    margin-top: 6em;
+    font-family: "Museo Sans"
+}
+
+.main .mapa-front .origin {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+    margin: 0.5em;
+
+}
+
+.main .mapa-front .model {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+
+}
+
+.main .mapa-front .crc {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+
+}
+
+.main .mapa-front .mrc {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+
+}
+
+.main .mapa-front .compra-venda {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+
+}
+
+.main .mapa-front .precificacao {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+}
+
+.main .mapa-front .servicos {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+
+}
+
+.main .mapa-front .boleta {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    background: #397eff;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-top: 8em;
+    margin-inline-end: 0.5em;
+    text-decoration: none;
+    border-radius: 8%;
+}
 .main .post-container {
     width: 60%;
     height: 20%;
@@ -161,7 +289,7 @@
 
 .main .post-list .post {
     position: relative;
-    display: block;
+    display: inline-flex;
     background-color: #D6E9F8;
     width: calc(100% - 2em);
     padding: 1em;
@@ -242,4 +370,32 @@
     padding: 1em;
     line-height: 1.4em;
     font-size: 1.2em;
+}
+
+.main .post-fake .fake{
+    margin-top: 3em;
+    padding: 1em;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    background-color: white;
+
+}
+
+.main .barra {
+    padding: 0.7em;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    background-color:#53b3ff;
+    color: white;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main .busca {
+    padding: 0.5em;
+    margin-left: 1.4em;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    color: white;
+    width: 7em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
