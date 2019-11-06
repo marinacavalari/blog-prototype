@@ -43,7 +43,7 @@
 .header {
     position: fixed;
     background-color: #53b3ff;
-    width: 20%;
+    width: 15%;
     height: 100%;
     font-family: "Museo Sans";
 }
@@ -107,147 +107,29 @@
     font-size: 1.2em;
 }
 .main {
-    left: 20%;
+    left: 15%;
     position: absolute;
     background-color: #f3f3f3;
-    width: 80%;
+    width: 85%;
     min-height: 100%;
     font-family: "Museo Sans"
 }
 
-.main .mapa-front {
-    position: absolute;
-    background-color: #dce6f7;
-    width: 50%;
-    min-height: 50%;
-    margin-top: 6em;
-    font-family: "Museo Sans"
-}
-
-.main .mapa-front .origin {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
+.main .mapa {
     padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-    margin: 0.5em;
-
-}
-
-.main .mapa-front .model {
     width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-
+    height: 15%;
+    cursor: pointer;
+    
 }
 
-.main .mapa-front .crc {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-
-}
-
-.main .mapa-front .mrc {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-
-}
-
-.main .mapa-front .compra-venda {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-
-}
-
-.main .mapa-front .precificacao {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-}
-
-.main .mapa-front .servicos {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-
-}
-
-.main .mapa-front .boleta {
-    width: 20%;
-    height: 20%;
-    display: inline-block;
-    background: #397eff;
-    color: white;
-    font-size: 1.2em;
-    padding: 0.5em;
-    margin-top: 8em;
-    margin-inline-end: 0.5em;
-    text-decoration: none;
-    border-radius: 8%;
-}
 .main .post-container {
     width: 60%;
     height: 20%;
-    margin: 2em auto;
+    margin: 18em 0 0 2em;
     display: flex;
-    align-items: center;
+
+    -align-items: center;
 }
 
 .main .post-container .post-content {
@@ -271,6 +153,7 @@
     border-radius: 50%;
     margin-left: 1em;
     margin-right: 1em;
+    margin-top: 3em;
     color: white;
     cursor: pointer;
 }
@@ -289,11 +172,11 @@
 
 .main .post-list .post {
     position: relative;
+    margin: 0 0 0 0;
     display: inline-flex;
     background-color: #D6E9F8;
     width: calc(100% - 2em);
     padding: 1em;
-    margin: 1em 0;
     font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -376,10 +259,14 @@
     background-color:#53b3ff;
     font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.5em;
+    position: relative;
+    
 }
 
 .main .busca {
     border: none;
+    position: relative;
+    -right: 0.5em;
     font-size: 1.2em;
     padding: 0.3em;
     height: 2em;
@@ -387,6 +274,28 @@
 
 .main .departaments {
     display: inline-block;
+    
+}
+
+.main .departaments .finance {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+       
+}
+
+.main .departaments .ops {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+    
+}
+
+.main .departaments .front {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+    
 }
 
 .main .followers-container {
