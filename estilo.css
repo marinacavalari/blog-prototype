@@ -43,7 +43,7 @@
 .header {
     position: fixed;
     background-color: #53b3ff;
-    width: calc(20% - 0.4em);
+    width: 15%;
     height: 100%;
     font-family: "Museo Sans";
 }
@@ -107,19 +107,29 @@
     font-size: 1.2em;
 }
 .main {
-    left: 20%;
+    left: 15%;
     position: absolute;
     background-color: #f3f3f3;
-    width: 80%;
+    width: 85%;
     min-height: 100%;
+    font-family: "Museo Sans"
+}
+
+.main .mapa {
+    padding: 0.5em;
+    width: 20%;
+    height: 15%;
+    cursor: pointer;
+    
 }
 
 .main .post-container {
     width: 60%;
     height: 20%;
-    margin: 2em auto;
+    margin: 18em 0 0 2em;
     display: flex;
-    align-items: center;
+
+    -align-items: center;
 }
 
 .main .post-container .post-content {
@@ -143,6 +153,7 @@
     border-radius: 50%;
     margin-left: 1em;
     margin-right: 1em;
+    margin-top: 3em;
     color: white;
     cursor: pointer;
 }
@@ -161,11 +172,11 @@
 
 .main .post-list .post {
     position: relative;
-    display: block;
+    margin: 0 0 0 0;
+    display: inline-flex;
     background-color: #D6E9F8;
     width: calc(100% - 2em);
     padding: 1em;
-    margin: 1em 0;
     font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -242,4 +253,75 @@
     padding: 1em;
     line-height: 1.4em;
     font-size: 1.2em;
+}
+
+.main .departaments-menu {
+    background-color:#53b3ff;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5em;
+    position: relative;
+    
+}
+
+.main .busca {
+    border: none;
+    position: relative;
+    -right: 0.5em;
+    font-size: 1.2em;
+    padding: 0.3em;
+    height: 2em;
+}
+
+.main .departaments {
+    display: inline-block;
+    
+}
+
+.main .departaments .finance {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+       
+}
+
+.main .departaments .ops {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+    
+}
+
+.main .departaments .front {
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+    
+}
+
+.main .followers-container {
+    position: fixed;
+    right: 0;
+    top: calc(100% - 3em);
+    height: 100%;
+    width: 12em;
+    background-color: #53b3ff;
+    padding: 1em 2em;
+    transition: top 200ms;
+}
+
+.main .followers-container:hover {
+    top: 2.6em;
+}
+
+.main .followers-container .title {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.main .followers-container .content li {
+    color: white;
+    padding: 0.5em 0;
 }
