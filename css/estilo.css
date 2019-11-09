@@ -126,10 +126,9 @@
 .main .post-container {
     width: 60%;
     height: 20%;
-    margin: 18em 0 0 2em;
+    margin: 2em auto;
     display: flex;
-
-    -align-items: center;
+    align-items: center;
 }
 
 .main .post-container .post-content {
@@ -172,7 +171,7 @@
 
 .main .post-list .post {
     position: relative;
-    margin: 0 0 0 0;
+    margin: 1em 0;
     display: inline-flex;
     background-color: #D6E9F8;
     width: calc(100% - 2em);
