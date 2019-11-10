@@ -1,0 +1,255 @@
+.strategic-map {
+    width: 90%;
+    display: flex;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.strategic-map .left-departaments {
+    width: 60%;
+    margin-right: 0.5em;
+}
+
+.strategic-map .left-departaments div {
+    display: block;
+}
+
+.strategic-map .right-departaments {
+    width: 40%;
+}
+.strategic-map .departament {
+    background-color: #cdefff;
+    border-radius: 1em;
+    display: inline-block;
+    position: relative;
+}
+
+.strategic-map .departament .title {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    color: #008fd5;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.strategic-map .departament .step {
+    background-color: #008fd5;
+    width: 6em;
+    height: 2.5em;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.4em;
+    padding: 0.2em 0.4em 0.4em 0.4em;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid #cdefff;
+    transition: border 200ms;
+}
+
+.strategic-map .departament .step:hover {
+    border: 2px solid #008fd5;
+}
+
+.strategic-map .departament .step.no-ops { background-color: #d0cece; }
+.strategic-map .departament .step.external { background-color: #4d4d4d; }
+
+.strategic-map .departament .brigde {
+    position: relative;
+    display: flex;
+}
+
+.strategic-map .departament .brigde span {
+    display: inline-block;
+    background-color: #606060;
+    position: absolute;
+}
+
+.strategic-map .departament .brigde .right,
+.strategic-map .departament .brigde .left {
+    height: 0.2em;
+}
+
+.strategic-map .departament .brigde .up {
+    width: 0.2em;
+}
+
+.strategic-map .departament .brigde .down {
+    width: 0.2em;
+}
+
+.strategic-map .departament .brigde .right > .up { right: 0; bottom: 0; }
+.strategic-map .departament .brigde .right > .down { right: 0; top: 0; }
+
+.strategic-map .departament .brigde .left > .up { left: 0; bottom: 0; }
+.strategic-map .departament .brigde .left > .down { left: 0; top: 0; }
+
+.strategic-map .departament .brigde .up > .left { right: 0; }
+.strategic-map .departament .brigde .up > .right { left: 0; }
+
+.strategic-map .departament .brigde .down > .left { right: 0; bottom: 0; }
+.strategic-map .departament .brigde .down > .right { left: 0; bottom: 0; }
+
+
+.strategic-map .departament .brigde .right.s1, .strategic-map .departament .brigde .left.s1 { width: 1em; }
+.strategic-map .departament .brigde .right.s2, .strategic-map .departament .brigde .left.s2 { width: 2em; }
+.strategic-map .departament .brigde .right.s3, .strategic-map .departament .brigde .left.s3 { width: 3em; }
+.strategic-map .departament .brigde .right.s4, .strategic-map .departament .brigde .left.s4 { width: 4em; }
+.strategic-map .departament .brigde .right.s5, .strategic-map .departament .brigde .left.s5 { width: 5em; }
+.strategic-map .departament .brigde .right.s6, .strategic-map .departament .brigde .left.s6 { width: 6em; }
+.strategic-map .departament .brigde .right.s7, .strategic-map .departament .brigde .left.s7 { width: 7em; }
+.strategic-map .departament .brigde .right.s8, .strategic-map .departament .brigde .left.s8 { width: 8em; }
+.strategic-map .departament .brigde .right.s9, .strategic-map .departament .brigde .left.s9 { width: 9em; }
+
+.strategic-map .departament .brigde .up.s1, .strategic-map .departament .brigde .down.s1 { height: 1em; }
+.strategic-map .departament .brigde .up.s2, .strategic-map .departament .brigde .down.s2 { height: 2em; }
+.strategic-map .departament .brigde .up.s3, .strategic-map .departament .brigde .down.s3 { height: 3em; }
+.strategic-map .departament .brigde .up.s4, .strategic-map .departament .brigde .down.s4 { height: 4em; }
+.strategic-map .departament .brigde .up.s5, .strategic-map .departament .brigde .down.s5 { height: 5em; }
+.strategic-map .departament .brigde .up.s6, .strategic-map .departament .brigde .down.s6 { height: 6em; }
+.strategic-map .departament .brigde .up.s7, .strategic-map .departament .brigde .down.s7 { height: 7em; }
+.strategic-map .departament .brigde .up.s8, .strategic-map .departament .brigde .down.s8 { height: 8em; }
+.strategic-map .departament .brigde .up.s9, .strategic-map .departament .brigde .down.s9 { height: 9em; }
+
+.strategic-map .departament .brigde span.arrow:after,
+.strategic-map .departament .brigde span.double-arrow:before,
+.strategic-map .departament .brigde span.double-arrow:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.strategic-map .departament .brigde .right.arrow:after,
+.strategic-map .departament .brigde .right.double-arrow:after,
+.strategic-map .departament .brigde .left.double-arrow:before {
+    right: -0.6em;
+    top: -0.3em;
+    border-color: transparent transparent transparent #555;
+    border-width: 0.4em 0 0.4em 0.6em;
+}
+
+.strategic-map .departament .brigde .left.arrow:after,
+.strategic-map .departament .brigde .left.double-arrow:after,
+.strategic-map .departament .brigde .right.double-arrow:before {
+    left: -0.6em;
+    top: -0.3em;
+    border-color: transparent #555 transparent transparent;
+    border-width: 0.4em 0.6em 0.4em 0;
+}
+
+.strategic-map .departament .brigde .up.arrow:after,
+.strategic-map .departament .brigde .up.double-arrow:after,
+.strategic-map .departament .brigde .down.double-arrow:before {
+    top: -0.6em;
+    left: -0.3em;
+    border-color: transparent transparent #555 transparent;
+    border-width: 0 0.4em 0.6em 0.4em;
+}
+
+.strategic-map .departament .brigde .down.arrow:after,
+.strategic-map .departament .brigde .down.double-arrow:after,
+.strategic-map .departament .brigde .up.dobuel-arrow:before {
+    bottom: -0.6em;
+    left: -0.3em;
+    border-color: #555 transparent transparent transparent;
+    border-width: 0.6em 0.4em 0 0.4em;
+}
+
+.strategic-map .departament .number {
+    position: absolute;
+    color: white;
+    background-color: #d0cece;
+    border-radius: 50%;
+    padding: 0.5em;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+}
+
+
+/* custom positions below */
+
+.strategic-map .front {
+    width: 100%;
+    height: calc(20em - 0.25em);
+    margin-bottom: 0.5em;
+}
+
+.strategic-map .finance {
+    width: 100%;
+    height: calc(20em - 0.25em);
+}
+
+.strategic-map .ops {
+    width: 100%;
+    height: 40em;
+}
+
+.strategic-map .front .step-1 {
+    top: 3em;
+    left: 2em;
+}
+
+.strategic-map .front .brigde-1-2 {
+    top: 7.2em;
+    left: 5.2em;
+}
+
+.strategic-map .front .brigde-1-3 {
+    top: 4em;
+    left: 9.5em;
+}
+
+.strategic-map .front .brigde-1-4 {
+    top: 4em;
+    left: 9.5em;
+}
+
+.strategic-map .front .step-2 {
+    top: 9em;
+    left: 2em;
+}
+
+.strategic-map .front .step-3 {
+    top: 0.5em;
+    left: 14em;
+}
+
+.strategic-map .front .brigde-3-5 {
+    top: 2em;
+    left: 21.5em;
+}
+
+.strategic-map .front .step-4 {
+    top: 6.5em;
+    left: 14em;
+}
+
+.strategic-map .front .step-5 {
+    top: 3em;
+    left: 26em;
+}
+
+.strategic-map .front .step-6 {
+    top: 3em;
+    right: 12em;
+}
+
+.strategic-map .front .step-7 {
+    bottom: 4em;
+    left: 20em;
+}
+
+.strategic-map .front .step-8 {
+    bottom: 2em;
+    right: 10em;
+}
+
+.strategic-map .front .number-1 {
+    bottom: 1em;
+    right: 8em;
+}

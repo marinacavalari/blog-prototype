@@ -115,145 +115,6 @@
     font-family: "Museo Sans"
 }
 
-.main .mapa {
-    padding: 0.5em;
-    width: 20%;
-    height: 15%;
-    cursor: pointer;
-    
-}
-
-.main .post-container {
-    width: 60%;
-    height: 20%;
-    margin: 2em auto;
-    display: flex;
-    align-items: center;
-}
-
-.main .post-container .post-content {
-    height: 5em;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    line-height: 5em;
-    font-size: 1.4em;
-    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
-    border: none;
-    border-radius: 0.2em;
-}
-
-.main .post-container .post-button {
-    border: none;
-    background: #53b3ff url('../images/white-check.svg') no-repeat center;
-    background-size: 50%;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 3em;
-    color: white;
-    cursor: pointer;
-}
-
-.main .post-container .post-button:hover {
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
-}
-
-.main .post-list {
-    width: 60%;
-    margin: 2em auto;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.main .post-list .post {
-    position: relative;
-    margin: 1em 0;
-    display: inline-flex;
-    background-color: #D6E9F8;
-    width: calc(100% - 2em);
-    padding: 1em;
-    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.main .post-list .post .like {
-    border: 1px solid #f3f3f3;
-    background: white url('../images/like-not-pressed.png') no-repeat center;
-    opacity: 0.4;
-    background-size: 50%;
-    cursor: pointer;
-    width: 2.4em;
-    height: 2.4em;
-    border-radius: 50%;
-    position: absolute;
-    right: 5em;
-    bottom: -1em;
-    outline: none;
-    transition: opacity 200ms;
-}
-
-.main .post-list .post .dislike {
-    border: 1px solid #f3f3f3;
-    background: white url('../images/dislike-not-pressed.png') no-repeat center;
-    opacity: 0.4;
-    background-size: 50%;
-    cursor: pointer;
-    width: 2.4em;
-    height: 2.4em;
-    border-radius: 50%;
-    position: absolute;
-    right: 2em;
-    bottom: -1em;
-    outline: none;
-    transition: opacity 200ms;
-}
-
-.main .post-list .post .like.pressed {
-    background: #397eff url('../images/like-pressed.png') no-repeat center;
-    background-size: 50%;
-    opacity: 1;
-}
-
-
-.main .post-list .post .like:hover {
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
-    opacity: 1;
-}
-.main .post-list .post .dislike.pressed {
-    background: #397eff url('../images/dislike-pressed.png') no-repeat center;
-    background-size: 50%;
-    opacity: 1;
-}
-
-
-.main .post-list .post .dislike:hover {
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
-    opacity: 1;
-}
-.main .post-list .post:nth-child(odd) {
-    background-color: white;
-}
-
-.main .post-list .post .author {
-    position: absolute;
-}
-
-.main .post-list .post .posted-at {
-    position: absolute;
-    font-size: 0.8em;
-    right: 1em;
-}
-
-.main .post-list .post .content{
-    margin-top: 2em;
-    padding: 1em;
-    line-height: 1.4em;
-    font-size: 1.2em;
-}
-
 .main .departaments-menu {
     background-color:#53b3ff;
     font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
@@ -295,6 +156,153 @@
     text-decoration: none;
     padding: 0.2em;
     
+}
+
+.main .main-content {
+    margin: 1.5em;
+}
+
+.main .main-content .usuario {
+    display: none;
+}
+
+.main .main-content .mapa {
+    padding: 0.5em;
+    width: 20%;
+    height: 15%;
+    cursor: pointer;
+    
+}
+
+.main .main-content .post-container {
+    width: 60%;
+    height: 20%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+}
+
+.main .main-content .post-container .post-content {
+    height: 5em;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    line-height: 5em;
+    font-size: 1.4em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.main .main-content .post-container .post-button {
+    border: none;
+    background: #53b3ff url('../images/white-check.svg') no-repeat center;
+    background-size: 50%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+.main .main-content .post-container .post-button:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.main .main-content .post-list {
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .main-content .post-list .post {
+    position: relative;
+    margin: 1em 0;
+    display: inline-flex;
+    background-color: #D6E9F8;
+    width: calc(100% - 2em);
+    padding: 1em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main .main-content .post-list .post .like {
+    border: 1px solid #f3f3f3;
+    background: white url('../images/like-not-pressed.png') no-repeat center;
+    opacity: 0.4;
+    background-size: 50%;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    position: absolute;
+    right: 5em;
+    bottom: -1em;
+    outline: none;
+    transition: opacity 200ms;
+}
+
+.main .main-content .post-list .post .dislike {
+    border: 1px solid #f3f3f3;
+    background: white url('../images/dislike-not-pressed.png') no-repeat center;
+    opacity: 0.4;
+    background-size: 50%;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    position: absolute;
+    right: 2em;
+    bottom: -1em;
+    outline: none;
+    transition: opacity 200ms;
+}
+
+.main .main-content .post-list .post .like.pressed {
+    background: #397eff url('../images/like-pressed.png') no-repeat center;
+    background-size: 50%;
+    opacity: 1;
+}
+
+
+.main .main-content .post-list .post .like:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+.main .main-content .post-list .post .dislike.pressed {
+    background: #397eff url('../images/dislike-pressed.png') no-repeat center;
+    background-size: 50%;
+    opacity: 1;
+}
+
+
+.main .main-content .post-list .post .dislike:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+.main .main-content .post-list .post:nth-child(odd) {
+    background-color: white;
+}
+
+.main .main-content .post-list .post .author {
+    position: absolute;
+}
+
+.main .main-content .post-list .post .posted-at {
+    position: absolute;
+    font-size: 0.8em;
+    right: 1em;
+}
+
+.main .main-content .post-list .post .content{
+    margin-top: 2em;
+    padding: 1em;
+    line-height: 1.4em;
+    font-size: 1.2em;
 }
 
 .main .followers-container {
