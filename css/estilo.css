@@ -162,8 +162,17 @@
     margin: 1.5em;
 }
 
-.main .main-content .usuario {
-    display: none;
+.main .main-content .profile {
+    color: #00467d;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main .main-content .profile .image {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .main .main-content .mapa {
@@ -171,7 +180,6 @@
     width: 20%;
     height: 15%;
     cursor: pointer;
-    
 }
 
 .main .main-content .post-container {
