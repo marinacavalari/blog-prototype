@@ -337,6 +337,13 @@
 }
 
 .main .followers-container .content li {
+    -color: white;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.main .process-container .content li {
     color: white;
-    padding: 0.5em 0;
+    padding: 0.25em;
+    text-decoration: none;
 }
