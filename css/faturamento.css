@@ -756,7 +756,7 @@
     top: 20em;
     margin-bottom: 2em;
     height: 7.2%;
-    border-radius: 50%;
+    
 }
 
 .main .process-container .process .process-24{
@@ -775,7 +775,7 @@
     top: 25em;
     margin-bottom: 2em;
     height: 7.2%;
-    border-radius: 50%;
+    
 }
 
 .main .process-container .process .process-25{
@@ -794,7 +794,7 @@
     top: 30em;
     margin-bottom: 2em;
     height: 7.2%;
-    border-radius: 50%;
+    
 }
 
 .main .process-container .process .image_raguzza{
@@ -804,6 +804,7 @@
     left: 41em;
     margin-bottom: 2em;
     padding: 0.5em;
+    border-radius: 50%;
     
 }
 
@@ -814,7 +815,7 @@
     left: 41em;
     margin-bottom: 2em;
     padding: 0.5em;
-    
+    border-radius: 50%;
 }
 
 .main .process-container .process .image_marina{
@@ -824,6 +825,7 @@
     left: 41em;
     margin-bottom: 2em;
     padding: 0.5em;
+    border-radius: 50%;
     
 }
 
