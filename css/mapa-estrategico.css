@@ -94,6 +94,11 @@
 
 
 .strategic-map .departament .brigde .right.s1, .strategic-map .departament .brigde .left.s1 { width: 1em; }
+.strategic-map .departament .brigde .right.s0, .strategic-map .departament .brigde .left.s0 { width: 0.5em; }
+.strategic-map .departament .brigde .right.s1-5, .strategic-map .departament .brigde .left.s1-5 { width: 1.5em; }
+.strategic-map .departament .brigde .right.s2-25, .strategic-map .departament .brigde .left.s2-25 { width: 2.25em; }
+.strategic-map .departament .brigde .right.s2-75, .strategic-map .departament .brigde .left.s2-75 { width: 2.75em; }
+.strategic-map .departament .brigde .right.s5-75, .strategic-map .departament .brigde .left.s5-75 { width: 5.75em; }
 .strategic-map .departament .brigde .right.s2, .strategic-map .departament .brigde .left.s2 { width: 2em; }
 .strategic-map .departament .brigde .right.s3, .strategic-map .departament .brigde .left.s3 { width: 3em; }
 .strategic-map .departament .brigde .right.s4, .strategic-map .departament .brigde .left.s4 { width: 4em; }
@@ -105,9 +110,12 @@
 
 .strategic-map .departament .brigde .up.s1, .strategic-map .departament .brigde .down.s1 { height: 1em; }
 .strategic-map .departament .brigde .up.s2, .strategic-map .departament .brigde .down.s2 { height: 2em; }
+.strategic-map .departament .brigde .up.s2-75, .strategic-map .departament .brigde .down.s2-75 { height: 2.75em; }
+.strategic-map .departament .brigde .up.s2-5, .strategic-map .departament .brigde .down.s2-5 { height: 2.5em; }
 .strategic-map .departament .brigde .up.s3, .strategic-map .departament .brigde .down.s3 { height: 3em; }
 .strategic-map .departament .brigde .up.s4, .strategic-map .departament .brigde .down.s4 { height: 4em; }
 .strategic-map .departament .brigde .up.s5, .strategic-map .departament .brigde .down.s5 { height: 5em; }
+.strategic-map .departament .brigde .up.s5-75, .strategic-map .departament .brigde .down.s5-75 { height: 5.75em; }
 .strategic-map .departament .brigde .up.s6, .strategic-map .departament .brigde .down.s6 { height: 6em; }
 .strategic-map .departament .brigde .up.s7, .strategic-map .departament .brigde .down.s7 { height: 7em; }
 .strategic-map .departament .brigde .up.s8, .strategic-map .departament .brigde .down.s8 { height: 8em; }
@@ -115,6 +123,7 @@
 .strategic-map .departament .brigde .up.s10, .strategic-map .departament .brigde .down.s10 { height: 10em; }
 .strategic-map .departament .brigde .up.s11, .strategic-map .departament .brigde .down.s11 { height: 11em; }
 .strategic-map .departament .brigde .up.s12, .strategic-map .departament .brigde .down.s12 { height: 12em; }
+.strategic-map .departament .brigde .up.s14, .strategic-map .departament .brigde .down.s14 { height: 14em; }
 .strategic-map .departament .brigde .up.s15, .strategic-map .departament .brigde .down.s15 { height: 15em; }
 
 .strategic-map .departament .brigde span.arrow:after,
@@ -205,12 +214,12 @@
 
 .strategic-map .front .brigde-1-3 {
     top: 4em;
-    left: 9.5em;
+    left: 9em;
 }
 
 .strategic-map .front .brigde-1-4 {
     top: 4em;
-    left: 9.5em;
+    left: 9em;
 }
 
 .strategic-map .front .step-2 {
@@ -226,7 +235,7 @@
 
 .strategic-map .front .brigde-3-5 {
     top: 2em;
-    left: 19.5em;
+    left: 19em;
 }
 
 .strategic-map .front .step-4 {
@@ -235,8 +244,8 @@
 }
 
 .strategic-map .front .brigde-4-5 {
-    top: 9em;
-    left: 19.5em;
+    top: 8em;
+    left: 19em;
 }
 
 .strategic-map .front .step-5 {
@@ -276,7 +285,7 @@
 
 .strategic-map .front .brigde-8-2 {
     bottom: -14em;
-    left: 23em;
+    left: 22.75em;
 }
 
 .strategic-map .front .brigde-8-3 {
@@ -286,12 +295,12 @@
 
 .strategic-map .finance .step-1 {
     bottom: 10em;
-    left: 2em;
+    left: 2.10em;
 }
 
 .strategic-map .finance .brigde-1-2 {
     top: 8em;
-    left: 9em;
+    left: 9.10em;
 }
 
 .strategic-map .finance .brigde-1-7 {
@@ -306,7 +315,7 @@
 
 .strategic-map .finance .brigde-2-8 {
     top: 0em;
-    left: 23em;
+    left: 22.75em;
 }
 .strategic-map .finance .step-3 {
     bottom: 10.2em;
@@ -316,27 +325,27 @@
 }
 
 .strategic-map .finance .step-4 {
-    bottom: 3em;
+    bottom: 1.5em;
     right: 13em;
 }
 
 .strategic-map .finance .brigde-4-5 {
-    bottom: -15em;
-    left: 22.2em;
+    bottom: -16em;
+    left: 21.9em;
 }
 
 .strategic-map .finance .step-5 {
-    bottom: 3em;
-    right: 3em;
+    bottom: 1.5em;
+    right: 2.5em;
 }
 
 .strategic-map .finance .step-6 {
-    bottom: 15.7em;
+    bottom: 16em;
     right: 13em;
 }
 
 .strategic-map .finance .brigde-2-6 {
-    bottom: -4.3em;
+    bottom: -3.7em;
     left: 18em;
 }
 
@@ -356,8 +365,8 @@
 }
 
 .strategic-map .ops .brigde-1-8 {
-    top: 6.75em;
-    left: 3em;
+    top: 6.2em;
+    left: 4.6em;
 }
 
 .strategic-map .ops .step-2 {
@@ -371,7 +380,7 @@
 }
 
 .strategic-map .ops .brigde-2-3 {
-    top: 13.5em;
+    top: 13.25em;
     left: 4.3em;
 }
 
@@ -411,13 +420,13 @@
 }
 
 .strategic-map .ops .step-4 {
-    top: 22em;
+    top: 21.60em;
     left: 1em;
 }
 
 .strategic-map .ops .brigde-4-8 {
-    top: 24em;
-    left: 8em;
+    top: 23.8em;
+    left: 7.8em;
 }
 
 .strategic-map .ops .step-5 {
@@ -438,11 +447,12 @@
 
 .strategic-map .ops .brigde-6-5 {
     top: 30em;
-    left: 13em;
+    left: 13.1em;
+    
 }
 
 .strategic-map .ops .brigde-6-7 {
-    top: 32em;
+    top: 31.3em;
     left: 20em;
 }
 
@@ -471,12 +481,12 @@
 }
 
 .strategic-map .ops .brigde-9-6 {
-    top: 14em;
+    top: 13.35em;
     left: 19em;
 }
 
 .strategic-map .ops .brigde-9-10 {
-    top: 7em;
+    top: 6.30em;
     left: 20em;
 }
 .strategic-map .ops .step-10 {
@@ -488,3 +498,69 @@
     top: 7em;
     left: 18em;
 }
+
+.strategic-map .front .border {
+    top: 7em;
+    left: 6em;
+    border-style: dotted;
+    z-index: 10;
+    background-color: none;
+}
+
+.strategic-map .front .step-23 {
+    top: 1.5em;
+    left: 23.75em;
+    width: 7em;
+    height: 9em;
+    border-style: dotted;
+    border-color: #0059ff;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.strategic-map .finance .step-24 {
+    top: 5.25em;
+    left: 13.75em;
+    width: 18em;
+    height: 7em;
+    border-style: dotted;
+    border-color: #0059ff;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.strategic-map .finance .step-25 {
+    top: 10.25em;
+    left: 20em;
+    height: 1em;
+    width: 6em;
+    border-style: dotted;
+    border-radius: 50%;
+    border-color: #0059ff;
+    z-index: 10;
+    background-color: transparent;
+    color: 0059ff;
+}
+
+
+.strategic-map .finance .brigde-2-25 {
+    top: 8.75em;
+    left: 28.60em;
+    background-color: cornflowerblue;
+    
+}
+
+.strategic-map .finance .brigde-25-2 {
+    top: 9.50em;
+    left: 18.35em;
+    background-color: cornflowerblue;
+    
+}
+
+.strategic-map .finance .brigde-25-5 {
+    top: 13em;
+    left: 22.90em;
+       
+}
+
+
