@@ -5,6 +5,7 @@
         <link href="css/faturamento.css" rel="stylesheet" type="text/css">
         <link href="css/estilo.css" rel="stylesheet" type="text/css">
         <link href="css/mapa-estrategico.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no shrink-to-fit=no" />
         <script src="js/blog.js"></script>
     </head>
     <body>
@@ -42,8 +43,11 @@
                 </figure>
                 
                 <section class="process-container">
-                    <p class="macro-process-title">Processos Relacionados ao Faturamento e Liquidação:</p>
-                    <ul class="process">
+                    <input type="checkbox" id="process-switch" class="process-switch">
+                    <label for="process-switch">
+                        <p class="macro-process-title">Processos Relacionados ao Faturamento e Liquidação:</p>
+                    </label>
+                    <ul class="process-list">
                         <a href="faturamento-emissao.html" class="process process-1">Faturamento e Emissão de Nfe</a>
                         <li><a href="" class="process process-2">Envio dos e-mails com Nota Fiscal</a></li>
                         <li><a href="" class="process process-3">Upload das notas no Mastersaf</a></li>
@@ -66,24 +70,23 @@
                         <li><a href="" class="process process-20">Elaboração e envio da carta quitação RIMA</a></li>
                         <li><a href="" class="process process-21">Pagamentos via Bradesco</a></li>
                         <li><a href="" class="process process-22">GPC Química - Cobrança e Recebimento dos pagamentos</a></li>
-                        <a href="https://lam.delve.office.com/?u=d492a2df-e906-4d50-aef5-2e031a5bda64&v=work" class="process process-23">Thiago Raguza</a>
-                            <img src="images/raguza.png" class="image_raguzza">
-                            <p class="raguza-info">thiago.raguza@btgpactual.com
-                                Ramal: 2682
-                            </p>
-                        <li><a href="" class="process process-24">Henrique Kumm</a></li>
-                            <img src="images/kumm.png" class="image_kum">
-                            <p class="kumm-info">henrique.kumm@btgpactual.com
-                                Ramal: 2351
-                            </p>
-                        <li><a href="" class="process process-25">Marina Dantas</a></li>
-                            <img src="images/marina.png" class="image_marina">
-                            <p class="marina-info">marina.dantas@btgpactual.com
-                                Ramal: 0000
-                            </p>
-                    </ul> 
-                        <p class="macro-person-title">Responsáveis pelos Processos:</p>
-                </section>   
+                    </ul>
+                    <!-- <a href="https://lam.delve.office.com/?u=d492a2df-e906-4d50-aef5-2e031a5bda64&v=work" class="process process-23">Thiago Raguza</a>
+                             <img src="images/raguza.png" class="image_raguzza">
+                             <p class="raguza-info">thiago.raguza@btgpactual.com
+                             Ramal: 2682
+                             </p>
+                             <li><a href="" class="process process-24">Henrique Kumm</a></li>
+                             <img src="images/kumm.png" class="image_kum">
+                             <p class="kumm-info">henrique.kumm@btgpactual.com
+                             Ramal: 2351
+                             </p>
+                             <li><a href="" class="process process-25">Marina Dantas</a></li>
+                             <img src="images/marina.png" class="image_marina">
+                             <p class="marina-info">marina.dantas@btgpactual.com
+                             Ramal: 0000
+                             </p> -->
+                </section>
    
                 <article class="followers-container">
                     <p class="title">Seguidores</p>

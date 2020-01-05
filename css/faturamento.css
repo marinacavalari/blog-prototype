@@ -350,381 +350,44 @@
  
 }
 
-.main .process-container .macro-process-title{
+.main .process-container .process-switch {
+    display: none;
+}
+
+.main .process-container .process-switch:checked ~ .process-list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main .process-container .macro-process-title {
     color: #00477d;
     padding: 0.50em;
     background: rgba(44, 134, 238, 0.438);
-    width: 45%;
-    height: 1.1em;
+    width: 95%;
     text-align: center;
-    position: absolute;
-    left: 1em;
-    top: 12em;
+    margin-top: 2em;
+    cursor: pointer;
     border-radius: 0.4em;
 }
 
-.main .process-container .process .process-1{
+.main .process-container .process-list {
+    margin: 1em auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms;
+}
+
+.main .process-container .process-list .process {
+    width: 95%;
+    display: block;
+    text-decoration: none;
+    border-radius: 0.4em;
+    padding: 0.2em 0.4em 0.4em 0.4em;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #cdefff;
+    transition: border 200ms;color: white;
     background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    top: 10em;
-    position: absolute;
-    left: 6.5em;
-    top: 15em;
-}
-
-.main .process-container .process .process-2{
-    background-color:rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    top: 10em;
-    position: absolute;
-    left: 6.5em;
-    top: 17em;
-}
-
-.main .process-container .process .process-3{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    top: 10em;
-    position: absolute;
-    left: 6.5em;
-    top: 19em;
-}
-
-.main .process-container .process .process-4{
-    background-color: rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 21em;
-}
-
-.main .process-container .process .process-5{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 23em;
-}
-
-.main .process-container .process .process-6{
-    background-color: rgba(0, 125, 192, 0.493);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 25em;
-}
-
-.main .process-container .process .process-7{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 27em;
-}
-
-.main .process-container .process .process-8{
-    background-color: rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 30em;
-}
-
-.main .process-container .process .process-9{
-    background-color: rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;;
-    top: 32em;
-}
-
-.main .process-container .process .process-10{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 35em;
-}
-
-.main .process-container .process .process-11{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 37em;
-}
-
-.main .process-container .process .process-12{
-    background-color: rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;;
-    top: 39em;
-}
-
-.main .process-container .process .process-13{
-    background-color:rgba(0, 68, 124, 0.945);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 41em;
-}
-
-.main .process-container .process .process-14{
-    background-color: rgba(0, 125, 192, 0.493);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 43em;
-}
-
-
-.main .process-container .process .process-15{
-    background-color:rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 46em;
-}
-
-
-.main .process-container .process .process-16{
-    background-color:rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 48em;
-}
-
-
-.main .process-container .process .process-17{
-    background-color: rgba(0, 125, 192, 0.493);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 50em;
-}
-
-
-.main .process-container .process .process-18{
-    background-color: rgba(0, 68, 124, 0.5);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 53em;
-}
-
-
-.main .process-container .process .process-19{
-    background-color:rgba(0, 125, 192, 0.493);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 56em;
-}
-
-
-.main .process-container .process .process-20{
-    background-color: rgba(0, 125, 192, 0.493);
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    position: absolute;
-    left: 6.5em;
-    top: 58em;
-}
-
-
-.main .process-container .process .process-21{
-    background-color:rgba(0, 68, 124, 0.5);
-    position: absolute;
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    left: 6.5em;
-    top: 60em;
-}
-
-
-.main .process-container .process .process-22{
-    background-color: rgba(0, 68, 124, 0.945);
-    position: absolute;
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    left: 6.5em;
-    top: 62em;
-    margin-bottom: 2em;
 }
 
 .main .process-container .macro-person-title{
@@ -738,63 +401,7 @@
     left: 35em;
     top: 12em;
     border-radius: 0.4em;
-}
-
-.main .process-container .process .process-23{
-    background-color:rgba(0, 68, 124, 0.945);
-    position: absolute;
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    left: 41em;
-    top: 20em;
-    margin-bottom: 2em;
-    height: 7.2%;
-    
-}
-
-.main .process-container .process .process-24{
-    background-color:rgba(0, 68, 124, 0.5);
-    position: absolute;
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    left: 41em;
-    top: 25em;
-    margin-bottom: 2em;
-    height: 7.2%;
-    
-}
-
-.main .process-container .process .process-25{
-    background-color:rgba(0, 125, 192, 0.493);
-    position: absolute;
-    width: 30%;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4em;
-    padding: 0.2em 0.4em 0.4em 0.4em;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid #cdefff;
-    transition: border 200ms;
-    left: 41em;
-    top: 30em;
-    margin-bottom: 2em;
-    height: 7.2%;
-    
+    display: inline-block;
 }
 
 .main .process-container .process .image_raguzza{
@@ -851,4 +458,38 @@
     width: 2em;
     left: 46em;
     color: white;
+}
+
+@media(min-width: 800px) {
+    .main .process-container .macro-process-title {
+        width: 70%;
+        margin: 2em auto;
+    }
+
+    .main .process-container .process-list {
+        width: 70%;
+        margin: 2em auto;
+    }
+}
+
+
+
+@media(min-width: 1024px) {
+    .main .process-container .macro-process-title {
+        width: 50%;
+    }
+
+    .main .process-container .process-list {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .main .process-container .macro-process-title {
+        width: 30%;
+    }
+
+    .main .process-container .process-list {
+        width: 30%;
+    }
 }
