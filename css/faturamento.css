@@ -36,6 +36,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: #f3f3f3;
+}
+
 .hide {
     display: none !important;
 }
@@ -109,7 +113,6 @@
 .main {
     left: 15%;
     /* position: absolute; */
-    background-color: #f3f3f3;
     width: 85%;
     height: 100%;
     font-family: "Museo Sans"
@@ -382,6 +385,7 @@
     display: block;
     text-decoration: none;
     border-radius: 0.4em;
+    margin: 0.2em 0;
     padding: 0.2em 0.4em 0.4em 0.4em;
     text-align: center;
     cursor: pointer;
