@@ -393,7 +393,7 @@ body {
     cursor: pointer;
     border: 2px solid #cdefff;
     transition: border 200ms;color: white;
-    background-color: rgba(0, 68, 124, 0.945);
+    background-color: rgb(96, 170, 255);;
 }
 
 .main .process-container .process-card {
@@ -410,15 +410,15 @@ body {
     visibility: hidden;
     opacity: ;
     height: 50%;
-    width: auto;
+    width: 26em;
     left: 54%;
     top: 23%;
-}
+    }
 
 .main .process-container .card-name {
     background: rgba(44, 134, 238, 0.0);
     color: rgba(0, 68, 124, 0.945);
-    top: 24%;
+    top: 44%;
     visibility: hidden;
     opacity: 0;
     height: auto;
@@ -480,7 +480,7 @@ body {
 
 .main .process-container .card-responsavel {
     background: rgba(44, 134, 238, 0);
-    top: 44%;
+    top: 24%;
     color: rgba(0, 68, 124, 0.945);
     visibility: hidden;
     opacity: 0;
@@ -509,11 +509,12 @@ body {
 
 .main .process-container .coment-content {
     background: rgb(248, 246, 246);
-    top: 52%;
+    top: 51%;
     color: rgba(0, 68, 124, 0.945);
     height: auto;
-    width: 27.1em;
+    width: 30.4em;
     padding: 2em;
+    margin: 1em;
     
 }
 
@@ -547,7 +548,7 @@ body {
     display: inline-block;
     color: rgba(250, 250, 250, 0.945);
     height: auto;
-    width: 20.6em;
+    width: 25em;
     right: 2.5%;
     padding: 1em;
     position: absolute;
@@ -566,14 +567,14 @@ body {
     
 }
 
-.main .process-container .process .image_kum{
+.main .process-container .card-kum{
     width: 6%;
     position: absolute;
-    top: 25em;
-    left: 41em;
-    margin-bottom: 2em;
-    padding: 0.5em;
+    top: 24%;
+    left: 59em;
+    padding: 0.2em;
     border-radius: 50%;
+    height: auto;
 }
 
 .main .process-container .process .image_marina{
