@@ -1,0 +1,781 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src:
+        url('../fonts/museo-sans-300-webfont.eot');
+    src:
+        url('../fonts/museo-sans-300-webfont-iefix.eot')
+        format('embedded-opentype'),
+        url('../fonts/museo-sans-300-webfont.woff2')
+        format('woff2'),
+        url('../fonts/museo-sans-300-webfont.woff')
+        format('woff'),
+        url('../fonts/museo-sans-300-webfont.ttf')
+        format('truetype'),
+        url('../fonts/museo-sans-300-webfont.svg')
+        format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src:
+        url('../fonts/museo-sans-500-webfont.eot');
+    src:
+        url('../fonts/museo-sans-500-webfont-iefix.eot')
+        format('embedded-opentype'),
+        url('../fonts/museo-sans-500-webfont.woff2')
+        format('woff2'),
+        url('../fonts/museo-sans-500-webfont.woff')
+        format('woff'),
+        url('../fonts/museo-sans-500-webfont.ttf')
+        format('truetype'),
+        url('../fonts/museo-sans-500-webfont.svg')
+        format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hide {
+    display: none !important;
+}
+
+.header {
+    position: fixed;
+    background-color: #53b3ff;
+    width: 100%;
+    height: 7%;
+    font-family: "Museo Sans";
+    z-index: 8;
+    top:0;
+
+}
+
+.header .logo {
+    position: relative;
+    width: 8em;
+}
+
+.header .menu {
+    width: calc(100% - 3em);
+}
+
+.header .menu .links {
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+
+.header .menu .links li {
+    display: flex;
+    padding: 2em;
+    transition: background-color 200ms;
+
+}
+
+.header .menu .links li:hover {
+    background-color: #53b3ff;
+}
+
+.header .menu .links a {
+    flex: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.header .user {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 2em;
+    width: 100%;
+    padding-left: 5em;
+    left: 73%;
+    bottom: 2.2em;
+    
+}
+
+.header .user .image {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 1.7em;
+    height: 1.7em;
+    cursor: pointer;
+}
+
+.header .user .name {
+    display: inline-block;
+    position: relative;
+    margin-left: 1.3em;
+    color: white;
+    font-size: 1.2em;
+    right: 1em;;
+    text-decoration: none;
+}
+.main {
+    background-color: #f3f3f3;
+    left: 20%;
+    min-height: 100%;
+    font-family: "Museo Sans";
+    top: 95%;
+}
+
+.header .departaments-menu {
+    background-color:#53b3ff;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5em;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.header .departaments-menu a{
+    padding: 0.5em;
+    text-decoration: none; 
+    color: white; 
+    text-emphasis: bold;  
+}
+
+
+.header .busca {
+    border: none;
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.3em;
+    height: 1.3em;
+    display: inline-block;
+    left: 17em;
+    bottom: 1em;
+
+}
+
+.main .menu {
+    position: fixed;
+    left: 0;
+    background-color:#53b3ff;
+    top: calc(100% - 3em);
+    height: 100%;
+    width: 9em;
+    padding: 1em 2em;
+    transition: top 500ms;
+    color: white;
+    margin: 1em 0em 1em 0em;
+    
+}
+
+.main .menu .links a{
+    color: white;
+    text-decoration: none;
+    padding-top: 1em;
+    
+   
+}
+
+.main .menu:hover {
+    top: 5%;
+    z-index: 8;
+}
+
+.main .main-content {
+    margin: 1.5em;
+}
+
+.main .main .profile {
+    color: #00467d;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main .main-content .mapa {
+    padding: 0.5em;
+    width: 20%;
+    height: 15%;
+    cursor: pointer;
+}
+
+.main .post-container {
+    width: 60%;
+    height: 20%;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 4em;
+}
+
+.main .post-container .post-content {
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    line-height: 3em;
+    font-size: 1em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.main  .post-container .post-button {
+    border: none;
+    background: #53b3ff url('../images/white-check.svg') no-repeat center;
+    background-size: 50%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+.main  .post-container .post-button:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.main  .post-list {
+    width: 60%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main  .post-list .post {
+    position: relative;
+    margin: 1em 0;
+    height: 4em;
+    display: inline-flex;
+    background-color: #D6E9F8;
+    width: calc(100% - 5em);
+    padding: 1em;
+    font-family: "Museo Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main  .post-list .post .like {
+    border: 1px solid #f3f3f3;
+    background: white url('../images/like-not-pressed.png') no-repeat center;
+    opacity: 0.4;
+    background-size: 50%;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    position: absolute;
+    right: 5em;
+    bottom: -1em;
+    outline: none;
+    transition: opacity 200ms;
+}
+
+.main  .post-list .post .dislike {
+    border: 1px solid #f3f3f3;
+    background: white url('../images/dislike-not-pressed.png') no-repeat center;
+    opacity: 0.4;
+    background-size: 50%;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    position: absolute;
+    right: 2em;
+    bottom: -1em;
+    outline: none;
+    transition: opacity 200ms;
+}
+
+.main  .post-list .post .like.pressed {
+    background: #397eff url('../images/like-pressed.png') no-repeat center;
+    background-size: 50%;
+    opacity: 1;
+}
+
+
+.main  .post-list .post .like:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+.main  .post-list .post .dislike.pressed {
+    background: #397eff url('../images/dislike-pressed.png') no-repeat center;
+    background-size: 50%;
+    opacity: 1;
+}
+
+
+.main  .post-list .post .dislike:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+.main  .post-list .post:nth-child(odd) {
+    background-color: white;
+}
+
+.main  .post-list .post .author {
+    position: absolute;
+}
+
+.main  .post-list .post .posted-at {
+    position: absolute;
+    font-size: 0.8em;
+    right: 1em;
+}
+
+.main  .post-list .post .content{
+    margin-top: 2em;
+    padding: 1em;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+
+.main .followers-container {
+    position: fixed;
+    right: 0;
+    top: calc(100% - 3em);
+    height: 100%;
+    width: 9em;
+    background-color: #53b3ff;
+    padding: 1em 2em;
+    transition: top 200ms;
+}
+
+.main .followers-container:hover {
+    top: 75%;
+    z-index: 9;
+}
+
+.main .followers-container .title {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.main .followers-container .content li {
+    -color: white;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.main .process-container .content li {
+    color: white;
+    padding: 0.25em;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    width: 4.5em;
+    left: 5em;
+    color: transparent;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 10em;
+    height: auto;
+    background-color:#00477dfb;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    white-space: pre-wrap;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 110%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip-2:hover .tooltiptext-2 {
+    visibility: visible;
+}
+
+.tooltip-2 {
+    position: absolute;
+    display: inline-block;
+    width: 5em;
+    left: 15em;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    white-space: pre-wrap;
+}
+
+.tooltip-2 .tooltiptext-2 {
+    visibility: hidden;
+    width: 10em;
+    background-color:#00477dfb;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 100%;
+}
+
+.tooltip-3:hover .tooltiptext-3 {
+    visibility: visible;
+}
+
+.tooltip-3 {
+    position: absolute;
+    display: inline-block;
+    width: 10em;
+    left: 30em;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    white-space: pre-wrap;
+}
+
+.tooltip-3 .tooltiptext-3 {
+    visibility: hidden;
+    width: 15em;
+    background-color:#00477dfb;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    right: 100%;
+}
+
+.main .logo-switch:checked .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms;
+
+}
+
+.main .strategic-map .scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    /* border-radius: 5%; */
+    background-color: #124772;
+    white-space: pre-wrap;
+    width:8em;
+    height: 2.5em;
+    position: sticky;
+    top: -0.5em;
+    font-size: 13px;
+    z-index: 2;
+    margin: -3em 1.5em 0 0;
+    color: white;
+              
+}
+
+.main .strategic-map .scrollmenu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -1.82em;
+    top: 0.305em;
+    /* border-radius: 1%; */
+    border-top: 1.9em  solid transparent;
+    border-bottom: 1.9em  solid transparent;
+    border-left: 1.9em  solid #124772;
+    z-index: 2;
+        
+}
+
+.main .volta a{
+    position: relative;
+    top: 3em;
+    left: 2em;
+    text-decoration: none;
+    color: #00477dfb;
+    font-weight: bold;
+
+}
+
+.main .profile {
+    position: relative;
+    top: 3em;
+    text-decoration: none;
+    color: #00477dfb;
+    font-weight: bold;
+    margin: 2em;
+
+}
+
+.main .strategic-map .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    height: 39em;
+    /* border-radius: 3%; */
+    width: 95%;
+    position: relative;
+    top: 3.70em;
+    margin: 0.5em 2.3em;
+    background-color:#f3f3f3;
+}
+
+.main .strategic-map .scrollmenu .steps a {
+    background-color: #48adffcc;
+    border-radius: 0.5em;
+    width:8em;
+    height: 3em;
+    margin: 0.5em 0.5em 0.5em  0.5em;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.2em;
+    position: relative;
+    z-index: 0;
+   color: white;
+
+}
+
+.main .strategic-map .scrollmenu .steps a::after {
+    content: '';
+    display: none;
+        
+}
+
+.main .strategic-map .scrollmenu .steps a:hover {
+    border: 1px solid #3aa2f8;
+
+}
+
+.main .strategic-map .scrollmenu .steps .step1 {
+    position: relative;
+    top: 0.5em;
+    left: 12em;
+        
+}
+
+.main .strategic-map .scrollmenu .steps .step2 {
+    left: 24em;
+    position: relative;
+    top: -4.2em;
+    
+}
+
+.main .strategic-map .scrollmenu .steps .step8 {
+    left: 24em;
+    position: relative;
+    top: -8.4em;
+    
+}
+
+.main .strategic-map .scrollmenu .step3 {
+    left: 24em;
+    position: relative;
+    top: -4.2em;
+    
+}
+
+.main .strategic-map .scrollmenu .step4 {
+    left: 24em;
+    position: relative;
+    top: -4.2em;
+    
+}
+
+.main .strategic-map .scrollmenu .step6 {
+    position: relative;
+    top: -26.2em;
+        
+}
+
+.main .strategic-map .scrollmenu .step5 {
+    left: 34.5em;
+    position: relative;
+    top: -13em;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.main .strategic-map .scrollmenu .step7 {
+    left: 46em;
+    position: relative;
+    top: -26em;
+    
+}
+
+.main .strategic-map .scrollmenu .step9 {
+    left: 46em;
+    position: relative;
+    top: -35em;
+    
+}
+
+.main .strategic-map .scrollmenu .step10 {
+    left:34.5em;
+    position: relative;
+    top: -39.5em;
+    
+}
+
+.main .strategic-map .scrollmenu .step11 {
+    position: relative;
+    top: -39.2em;
+    left: 12em;
+    
+}
+
+.main .strategic-map .scrollmenu .step12 {
+    left: 57em;
+    position: relative;
+    top: -48.3em;
+   
+}
+
+.main .strategic-map .scrollmenu .step13 {
+    position: relative;
+    top: -43.9em;
+    left: 12em;
+   
+}
+
+.main .strategic-map .scrollmenu .step14 {
+    position: relative;
+    top: -43.9em;
+    left: 12em;
+   
+    
+}
+
+.main .strategic-map .scrollmenu .step15 {
+    position: relative;
+    top: 0.5em;
+    left: 12em;
+   
+    
+}
+
+.main .strategic-map .scrollmenu .step16 {
+    left: 80em;
+    position: relative;
+    top: -57.3em;
+   
+   
+}
+
+.main .strategic-map .scrollmenu .step18 {
+    left: 69em;
+    position: relative;
+    top: -74.8em;
+    
+}
+
+.main .strategic-map .scrollmenu .step17 {
+    left: 57em;
+    position: relative;
+    top: -65.8em;
+}
+
+.main .strategic-map .scrollmenu .step19 {
+    left: 57em;
+    position: relative;
+    top: -70em;
+    
+}
+
+.main .strategic-map .scrollmenu .step20 {
+    left:80em;
+    position: relative;
+    top:-79.2em;
+    
+}
+
+.main .strategic-map .scrollmenu .step21 {
+    left:80em;
+    position: relative;
+    top:-88em;
+    
+}
+
+.main .strategic-map .scrollmenu .step28 {
+    position: relative;
+    top: -17.2em;
+    
+        
+    
+}
+
+.main .strategic-map .scrollmenu .step26 {
+    left: 80em;
+    position: relative;
+    top: -48.3em;
+    color: transparent;
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+   
+}
+
+.main .strategic-map .scrollmenu .step27 {
+    position: relative;
+    color: transparent;
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+   
+}
+
+.main .strategic-map .scrollmenu .step29 {
+    position: relative;
+    top: 0.5em;
+    left: 12em;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.main .strategic-map .scrollmenu .step01 {
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.main .strategic-map .scrollmenu .step02 {
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.main .strategic-map .scrollmenu .step07 {
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.main .strategic-map .capability {
+    overflow: auto;
+    white-space: nowrap;
+    min-width: auto;
+    /* border-radius: 3%; */
+    width: 100%;
+    position: absolute;
+    top: 20em;
+    background-color:#f3f3f3;
+    z-index: 6;
+}

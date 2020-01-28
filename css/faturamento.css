@@ -54,7 +54,7 @@ body {
 
 .header .logo {
     display: block;
-    margin: 2em auto;
+    margin: 1em auto;
     width: 80%;
 }
 
@@ -171,6 +171,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 0 0 0.5em;
 }
 
 .main .main-content .profile .image {
@@ -373,14 +374,6 @@ body {
     border-radius: 0.4em;
 }
 
-.main .process-container .process-list {
-    /* margin: 1em auto; */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 250ms;
-    right: 10em;
-  
-}
 
 .main .process-container .process-list .process {
     width: 95%;
@@ -408,7 +401,7 @@ body {
     border-radius: 0.4em;
     display: inline-block;
     visibility: hidden;
-    opacity: ;
+    opacity: 0;
     height: 50%;
     width: 26em;
     left: 54%;
@@ -450,8 +443,19 @@ body {
     height: auto;
     right: 2.5%;
     width: auto;
-    padding: 1em;
-    
+    padding: 1em;   
+}
+
+.main .process-container .card p{
+    background: red;
+    color:red;
+    top: 32%;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+    right: 2.5%;
+    width: auto;
+    padding: 1em;   
 }
 
 .main .process-container .card-projeto {
@@ -526,6 +530,7 @@ body {
     width: 27.1em;
     right: 2.5%;
     padding: 1em;
+    cursor: pointer;
     
 }
 
@@ -539,6 +544,7 @@ body {
     right: 2.5%;
     padding: 0em 8em;
     position: absolute;
+    cursor: pointer;
     
 }
 
@@ -553,6 +559,7 @@ body {
     padding: 1em;
     position: absolute;
     text-align: center;
+    cursor: pointer;
     
 }
 
@@ -644,4 +651,47 @@ body {
     .main .process-container .process-list {
         width: 30%;
     }
+}
+
+.main .strategic-map .scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    width: 4.5em;
+    left: 50em;
+    top:15em;
+    /* color: transparent; */
+    cursor: pointer;
+    color: red;
+    z-index: 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 10em;
+    height: auto;
+    background-color:#00477dfb;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    white-space: pre-wrap;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 50;
+    top: 1px;
+    right: 150%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    z-index: 50;
 }
